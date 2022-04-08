@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		
+		<!--Estilo-->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+		<title>Rich Text Editor</title>
+	</head>
+	<body>
+
+		<div class="main-content container my-5 rounded p-0">
+			
+			<div class="text-editor-header d-flex justify-content-start justify-content-sm-around align-items-center flex-wrap p-2 border-bottom bg-light">
+				
+				<button type="button" class="btn" data-element="bold">
+					<i class="fa fa-bold"></i>
+				</button>
+				<button type="button" class="btn" data-element="italic">
+					<i class="fa fa-italic"></i>
+				</button>
+				<button type="button" class="btn" data-element="underline">
+					<i class="fa fa-underline"></i>
+				</button>
+				<button type="button" class="btn" data-element="insertUnorderedList">
+					<i class="fa fa-list-ul"></i>
+				</button>
+				<button type="button" class="btn" data-element="insertOrderedList">
+					<i class="fa fa-list-ol"></i>
+				</button>
+				<button type="button" class="btn" data-element="createLink">
+					<i class="fa fa-link"></i>
+				</button>
+				<button type="button" class="btn" data-element="justifyLeft">
+					<i class="fa fa-align-left"></i>
+				</button>
+				<button type="button" class="btn" data-element="justifyCenter">
+					<i class="fa fa-align-center"></i>
+				</button>
+				<button type="button" class="btn" data-element="justifyRight">
+					<i class="fa fa-align-right"></i>
+				</button>
+				<button type="button" class="btn" data-element="justifyFull">
+					<i class="fa fa-align-justify"></i>
+				</button>
+				<button type="button" class="btn" data-element="insertImage">
+					<i class="fa fa-image"></i>
+				</button>
+
+			</div>
+
+			<section class="content" contenteditable="true"></section>
+
+			<div class="text-editor-footer d-flex justify-content-between p-2 border-top bg-light">
+				<button type="button" class="btn btn-danger" onclick="deleteText()">
+					<i class="far fa-trash-alt"></i>
+				</button>
+				<button type="button" class="btn btn-success" onclick="saveText()">
+					<i class="far fa-save"></i>
+				</button>		
+			</div>
+
+		</div>
+
+		<!--SCRIPTS-->
+		<script type="text/javascript" src="js/script.js"></script>
+		<!--JS-->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type="text/javascript"></script>
+		<!--FontAwesome-->
+		<script src="https://kit.fontawesome.com/3987959ad5.js" crossorigin="anonymous"></script>
+	</body>
+</html>

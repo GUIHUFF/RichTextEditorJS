@@ -1,0 +1,22 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body { font-family: sans-serif; }
+
+.main-content {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+	background-color: transparent;
+}
+
+.content {
+	min-height: 200px;
+	border: 1px solid #ECF0F1;
+	border-top: 0;
+	padding: 20px;
+}
+
